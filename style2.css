@@ -1,30 +1,30 @@
 
+
 body {
 	margin: auto;
 	font-family: Lato;
-	font-size: 1.2rem;
+	font-size: 1.5rem; 
 	line-height: 1.5;
- }
+ 
+}
 
 header{
 	text-align: center;
-	color: #f2f2f2;
-	text-shadow: 2.5px 2.5px #665e63;
-	background: #2f2f2f;
-	padding: .5%;
+	color: #ffffff;
+	padding: 15%;
+
 	}
 
 
 img {
 	height: auto;
  	max-width: 100%;
-  	margin: 0px 0px 5px 0px;
-   	padding: 5px;
-    display: block;
-    border-radius: 0% 10% 0% 10%;
-    box-shadow: 5px 5px 10px #665e63;
-
-   
+  margin: 0px 0px 5px 0px;
+  padding: 5px;
+  display: block;
+  border-radius: 0% 10% 0% 10%;
+  box-shadow: 5px 5px 10px #665e63;
+        
  }
 
 
@@ -32,69 +32,217 @@ img {
 	display: flex;
 	background-color: #ffffff;
 	max-width: 100%;
-	border-top: 5px outset #065842;   
-	border-bottom: 5px outset #065842;   
-	border-radius: 5px;
-	font-size: 1rem;
-	box-shadow: 0px 2px 10px 3px #665e63;
-/*  box-shadow: 0 0 3px 3px inset #999;   */
-
-
+	border-top: 5px solid #065842;   
+	border-bottom: 5px solid #065842;   
+	font-size: 1.1rem;		
 }
 
 
 .mainpicbox {
-/*	border: solid 2px blue;  */
+  /* border: solid 2px blue; */
 	display: flex;
-	align-content: space-between;
 	
 }
 
 
+ #img-div {
+/*	border: solid 2px purple; */
+}
+
 
 .picbox {
-/*	border: solid 2px red;  */
-	margin: 10px;
+/*	border: solid 2px red; */
+	margin: 40px 5px 5px 10px;
 	flex: 100%;
 	max-width: 100%;
-	align-content: space-between;
 		
 }
 
 
 #img-caption{
-/*	border: solid 2px green;  */
+/*	border: solid 2px green; */
 	text-align: center;
 	font-size: 16px;
-	
-	
+		
 }
 
-/*.textbox {
-	border: solid 2px red;
-
+.textbox {
+/*	border: solid 2px orange;  */
+	padding: 28px 20px 0px 30px;
+  
 }
-*/
-#footer {
+
+
+footer {
 	text-align: center;
 	color: #f2f2f2;
 	background: #2f2f2f;
 	padding: 1%;
 }
-h3 {
-	margin: 0;
+
+/* h3 {
+	margin: 0;  */
+
 }
 
-#tribute-link {
+/* #tribute-link {
 	color: #3cb371;
-
 }
+  */
 
 #tribute-info {
 	margin: 0px 10px 0px 20px;
 	padding: 1% 2%;
-}
+	display: block;
+  }
 
 .justify {
 	text-align: justify;
 }
+
+
+/* forma de los botones de redes sociales */
+
+.fa {
+  padding: 30px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;  
+  font: normal normal normal 14px/1 Lato; 
+  
+}
+
+.fa:hover {
+    opacity: 0.4;
+}
+
+
+/* color de fondo y del ícono de botones de redes sociales */
+
+.fa-link {
+	background: #065842;
+	color: #f2f2f2;
+	
+}
+
+.fa-facebook {
+	background: #065842;
+	color: #f2f2f2;
+	
+}
+
+.fa-twitter {
+	background: #065842;
+	color: #f2f2f2;
+	
+}
+
+.fa-youtube {
+	background: #065842;
+	color: #f2f2f2;
+	
+}
+
+.fa-instagram {
+	background: #065842;
+	color: #f2f2f2;
+}
+
+
+/* tooltip de los botenes de redes sociales */
+
+ .tooltip {
+  position: relative; 
+   
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  text-align: center;
+  padding: 5px 0; 
+  font-size: 0.9rem;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -40px;
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+
+}
+
+/* foto de fondo  */
+
+  .back-photo {
+  background-image: url("https://images5.alphacoders.com/983/983229.jpg");
+  background-color: #cccccc;
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 100%;
+}
+
+
+.header-box {
+  position: center;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  opacity: 0.7;
+  font-size:2vw;
+    
+}
+
+
+
+
+ /* para equipos móviles */
+
+@media only screen and (max-width:1024px) {
+  
+  #main {
+    width: 98%;
+    flex-flow: column-reverse nowrap;
+  }
+  
+  .header-box {
+    margin-top: 70px;
+    font-size: 0.5rem;
+  }
+  
+  .mainpicbox {
+    margin-right: 12px;
+  }
+  
+}
+
+
+
+/* para desktop */
+
+@media only screen and (min-width: 1500px) {
+    #main {
+    width: 100%;
+  }
+  
+  .textbox {
+    font-size: 1.48rem;
+  }
+
+  .back-photo {
+  	max-width: 100%;
+  	height: 370px;
+  }
+  
